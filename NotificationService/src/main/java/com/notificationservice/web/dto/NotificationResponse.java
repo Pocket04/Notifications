@@ -4,7 +4,6 @@ import com.notificationservice.model.NotificationStatus;
 import lombok.Builder;
 import lombok.Data;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -18,4 +17,6 @@ public class NotificationResponse {
     private NotificationStatus status;
 
     private LocalDateTime date;
+
+
 }
