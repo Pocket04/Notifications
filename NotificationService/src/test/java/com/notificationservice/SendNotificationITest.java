@@ -45,7 +45,7 @@ public class SendNotificationITest {
 
         List<Notification> notifications = notificationRepository.findByUserId(notification.getUserId());
         assertThat(notifications).hasSize(1);
-        Notification notification1 = notifications.getFirst();
+        Notification notification1 = notifications.get(0);
         assertThat(notification1.getUserId()).isEqualTo(notification.getUserId());
     }
 }

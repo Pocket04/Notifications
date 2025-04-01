@@ -47,8 +47,7 @@ public class NotificationServiceAPITest {
 
         when(notificationService.getAllNotifications(any())).thenReturn(List.of(notificationResponse));
 
-        MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/api/v1/notifications")
-                .param("userId", UUID.randomUUID().toString());
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/api/v1/notifications/" + UUID.randomUUID());
 
         mockMvc.perform(request)
                 .andExpect(status().isOk())
