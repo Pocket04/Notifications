@@ -30,8 +30,8 @@ public class NotificationController {
         NotificationResponse notificationResponse = NotificationResponseMapper.mapNotificationResponse(notification);
         return ResponseEntity.status(HttpStatus.CREATED).body(notificationResponse);
     }
-    @GetMapping
-    public ResponseEntity<List<NotificationResponse>> getNotifications(@RequestParam UUID userId) {
+    @GetMapping("/{userId}")
+    public ResponseEntity<List<NotificationResponse>> getNotifications(@PathVariable UUID userId) {
 
         return ResponseEntity.status(HttpStatus.OK)
                         .body(notificationService.getAllNotifications(userId));

@@ -6,16 +6,12 @@ import com.notificationservice.repository.NotificationRepository;
 import com.notificationservice.web.dto.NotificationRequest;
 import com.notificationservice.web.dto.NotificationResponse;
 import com.notificationservice.web.mapper.NotificationResponseMapper;
-import lombok.extern.java.Log;
-import lombok.extern.log4j.Log4j;
-import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

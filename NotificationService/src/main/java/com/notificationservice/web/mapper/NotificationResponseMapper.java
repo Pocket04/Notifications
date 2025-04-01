@@ -14,6 +14,7 @@ public class NotificationResponseMapper {
                 .body(notification.getBody())
                 .status(notification.getStatus())
                 .date(notification.getDate())
+                .userId(notification.getUserId())
                 .build();
     }
 
