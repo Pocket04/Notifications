@@ -1,14 +1,17 @@
 package com.notificationservice.web.dto;
 
 import com.notificationservice.model.NotificationStatus;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class NotificationResponse {
 
     private UUID userId;
